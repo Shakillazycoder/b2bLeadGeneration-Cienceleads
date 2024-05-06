@@ -36,7 +36,7 @@ export default function Testimonial() {
       >
         <SwiperSlide>
           <div>
-            <div className="">
+            <div>
               <div className="swiper-slide group bg-white text-center border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600">
                 <div className="flex items-center justify-center gap-5 mb-5 sm:mb-9">
                   <img

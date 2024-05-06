@@ -7,6 +7,8 @@ import Services from "../Pages/Services";
 import CaseStudies from "../Pages/CaseStudies";
 import WhyUs from "../Pages/WhyUs";
 import Testimonial from "../Pages/Testimonial";
+import PrivatePolicy from "../Pages/PrivatePolicy";
+import Contact from "../Pages/Contact";
   
   const router = createBrowserRouter([
     {
@@ -33,6 +35,14 @@ import Testimonial from "../Pages/Testimonial";
           {
             path: "/testimonial",
             element: <Testimonial></Testimonial>,
+          },
+          {
+            path: "/privacy",
+            element: <PrivatePolicy></PrivatePolicy>
+          },
+          {
+            path: "/contact",
+            element: <Contact></Contact>
           }
         ]}
   ]);

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div className="mt-20 text-white">
@@ -15,19 +17,18 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
+                <Link to='/privacy'>
+                <p  className="hover:underline me-4 md:me-6">
                   Privacy Policy
-                </a>
+                </p>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
-                  Licensing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Contact
-                </a>
+                <Link to='/contact'>
+                <p  className="hover:underline me-4 md:me-6">
+                  Contact Us
+                </p>
+                </Link>
               </li>
             </ul>
           </div>

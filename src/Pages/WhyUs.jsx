@@ -1,6 +1,6 @@
 const WhyUs = () => {
   return (
-    <div>
+    <div id="why">
       <div className="flex flex-col lg:flex-row justify-between space-y-4 items-center mx-auto">
         <div className="lg:w-1/2 text-4xl">
           <h1>Why CienceLeads?</h1>

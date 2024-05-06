@@ -7,12 +7,12 @@ import WhyUs from "./WhyUs";
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
             <Banner></Banner>
             <BookingMeeting></BookingMeeting>
             <SaaSPrice></SaaSPrice>
             <CamPaignProcess></CamPaignProcess>
-            <WhyUs></WhyUs>
+            <WhyUs id="why-us"></WhyUs>
             <Testimonial></Testimonial>
         </div>
     );

@@ -1,41 +1,70 @@
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to='/' className={({ isActive}) =>
-    isActive ? "text-red-500 border-2 p-3 rounded-xl border-red-500" : "text-white"
-  }>Home</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#fff] border-2 p-3 rounded-xl border-[#1649FF]"
+              : "text-white"
+          }
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to='/why' className={({ isActive}) =>
-    isActive ? "text-red-500 border-2 p-3 rounded-xl border-red-500" : "text-white"
-  }>Why Us?</NavLink>
+        <Link to="why" className="hover:pb-3 hover:border-b-4 hover:border-b-yellow-400 cursor-pointer" offset={-150} smooth={true} duration={500}>
+          Why Us?
+        </Link>
       </li>
       <li>
-        <NavLink to='/testimonial' className={({ isActive}) =>
-    isActive ? "text-red-500 border-2 p-3 rounded-xl border-red-500" : "text-white"
-  }>Testimonials</NavLink>
+        <NavLink
+          to="/testimonial"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#fff] border-2 p-3 rounded-xl border-[#1649FF]"
+              : "text-white"
+          }
+        >
+          Testimonials
+        </NavLink>
       </li>
       <li>
-        <NavLink to='/services' className={({ isActive}) =>
-    isActive ? "text-red-500 border-2 p-3 rounded-xl border-red-500" : "text-white"
-  }>Services</NavLink>
+        <NavLink
+          to="/services"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#fff] border-2 p-3 rounded-xl border-[#1649FF]"
+              : "text-white"
+          }
+        >
+          Services
+        </NavLink>
       </li>
       <li>
-        <NavLink to='/caseStudies' className={({ isActive}) =>
-    isActive ? "text-red-500 border-2 p-3 rounded-xl border-red-500" : "text-white"
-  }>Case Studies</NavLink>
+        <NavLink
+          to="/caseStudies"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#fff] border-2 p-3 rounded-xl border-[#1649FF]"
+              : "text-white"
+          }
+        >
+          Case Studies
+        </NavLink>
       </li>
     </>
   );
 
   return (
     <div>
-      <div className="navbar text-white">
+      <div className="navbar text-white bg-[#000133] fixed p-5 top-0 left-0 z-50">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown ">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,15 +88,18 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <p className="btn btn-ghost text-xl gap-0">Cience<span className="gap-0 bg-[#1649FF] rounded-xl px-2">Leads</span></p>
+          <p className="btn btn-ghost text-xl gap-0">
+            Cience
+            <span className="gap-0 bg-[#1649FF] rounded-xl px-2">Leads</span>
+          </p>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu-horizontal space-x-8 px-1">
-           {navLinks}
-          </ul>
+          <ul className="menu-horizontal space-x-8 px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-[#1649FF] hover:text-[#1649FF] text-lg border-none text-white">Book A Demo</a>
+          <a className="btn bg-[#1649FF] hover:text-[#1649FF] text-lg border-none text-white">
+            Book A Demo
+          </a>
         </div>
       </div>
     </div>
